@@ -1,0 +1,39 @@
+    <!doctype html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Expanding Search Box</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript">
+    $(document).ready(function(){
+    var submitIcon = $('.searchbox-icon');
+    var inputBox = $('.searchbox-input');
+    var searchBox = $('.searchbox');
+    var isOpen = false;
+    submitIcon.click(function(){
+    if(isOpen == false){
+    searchBox.addClass('searchbox-open');
+    inputBox.focus();
+    isOpen = true;
+    } else {
+    searchBox.removeClass('searchbox-open');
+    inputBox.focusout();
+    isOpen = false;
+    }
+    });
+    });
+    </script>
+    </head>
+    <body>
+        <div class="container">
+<form class="searchbox">
+<input type="text" placeholder="Search......" name="search" class="searchbox-input" required>
+<input type="submit" class="searchbox-submit" value="GO">
+<span class="searchbox-icon">GO</span>
+</form>
+</div>
+
+
+    </body>
+    </html>
