@@ -25,6 +25,7 @@
 
 				<script src="library/js/libs/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 
+
 				<!-- SNAZZY MAPS THEME -->
 				  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
 				<script type="text/javascript">
@@ -122,89 +123,137 @@
 					</div>
 				</header>
 
-	<div class="head-contacto"></div>
+
+
+	<div class="head-single"></div>
 
 	<section class="single">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-md-8">
 					<div class="breadcrumbs">
-						<span><a href="#">Inicio</a> > </span><span class="actual-bc"><a href="#">Contacto</a></span>
+						<span><a href="#">Inicio</a> > </span><span class="actual-bc"><a href="#">Instalación y venta</a></span>
 					</div>
-					<div class="contacto">
+					<div class="">
 						<article>
-							<div class="">
+							<div class="articulo">
 								<h1>
-									¡Contáctanos!
+									Recupera tu tranquilidad ahora mismo.
 								</h1>
 								<hr>
 								<div class="row">
 									<div class="col-md-3">
-										<form>
-											<label for="name">Nombre completo*</label><br>
-											<input type="text" name="nombre" class="contacto" id="name" required><br>
-											<label for="locality">Localidad*</label><br>
-											<select name="localidad" class="contacto" id="locality" required>
-												<option disabled>Elige uno</option>
-												<option value="volvo">Ciudad de México</option>
-												<option value="saab">Monterrey</option>
-												<option value="mercedes">Guadalajara</option>
-											</select><br>
-											<label for="mail">E-mail*</label><br>
-											<input type="text" name="correo" class="contacto" id="mail" required><br>
-											<label for="phone">Teléfono*</label><br>
-											<input type="text" name="telefono" class="contacto" id="phone" required>
+										<form class="instala">
+											<select>
+												<option>Selecciona tu estado</option>
+												<option>Ciudad de México</option>
+												<option>Monterrey</option>
+												<option>Guadalajara</option>
+											</select>
 										</form>
 									</div>
-									<div class="col-md-5">
-										<form>
-											<label>Deja tu mensaje*</label><br>
-											<textarea rows="9" cols="53"></textarea>
+									<div class="col-md-3">
+										<form class="instala">
+											<select>
+												<option>Selecciona servicio</option>
+												<option>Instalación</option>
+												<option>Distribuidor</option>
+												<option>Todos</option>
+											</select>
 										</form>
 									</div>
-									<div class="col-md-4">
-										<p><strong>México</strong><br> Alejandro Dumas No. 304 Col Polanco, México D.F. Tel (55) 2581 1060</p>
-										<p><strong>Guadalajara</strong> <br>Av. Patria No. 39 Col. Prados de Vallarta Zapopan, Jalisco Tels: (33) 36 30 40 04 y 06</p>
-										<p><strong>Monterrey</strong> <br>Roble No. 300 Col. Valle Campestre San Pedro Garza García, Nuevo León Tel (81) 8335 1480 y 81</p>
-										<p><strong>Resto del País</strong><br>01 800 849 9053</p>
+									<div class="col-md-6">
+										<form>
+											<input type="submit" class="btn btn-primary" value="Buscar &raquo;" style="margin:-6px 0 10px 0;">
+										</form>
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-md-8 col-md-offset-2">
-										<form>
-											<input type="checkbox" name="privacy" value="terminos" class="terminos" style="width:30px; margin-left:20px; font-size:10px;">He leído y acepto los Términos de Privacidad<br>
-											<input type="submit" class="btn btn-default" value="Enviar">
-										</form>
+									<div class="col-md-12">
+										<div id="map"></div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6">
+										Ven a LoJack y conoce porque somos la mejor opción para ti, y para tu seguridad. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+									</div>
+									<div class="col-md-6">
+										<ul>
+											<li>Efectividad superior al 92% certificado ante notario público #44.</li>
+											<li>Infraestructura y cuerpo de reacción propio.</li>
+											<li>Trabajo en conjunto con las autoridades a nivel nacional.</li>
+										</ul>
 									</div>
 								</div>
 							</div>
 						</article>
 					</div>
-					<div class="row">
-						<div class="col-md-12">
-							<div id="map"></div>
+				</div>
+
+				<div class="col-md-4">
+					<aside>
+						<div class="formulario" style="margin-top:40px;">
+							<div class="row">
+								<div class="form-head">
+									<h3>¡Haz una cita para instalar LoJack!</h3>
+								</div>
+							</div>
+							<div class="row">
+								<div class="form-body">
+									<form>
+										<label for="name">Nombre(s)*</label><br>
+										<input type="text" name="name" id="name" class="formulario" required><br>
+										<label for="last-name">Apellido(s)*</label><br>
+										<input type="text" name="last-name" id="last-name" class="formulario" required><br>
+										<label for="phone">Teléfono*</label><br>
+										<input type="tel" name="phone" id="phone" class="formulario" required><br>
+										<label for="mail">E-mail*</label><br>
+										<input type="text" name="mail" id="mail" class="formulario" required><br>
+										<label for="cp">Código Postal*</label><br>
+										<input type="text" name="cp" id="cp" class="formulario" required><br>
+										<label for="horario">¿En qué horario es más fácil contactarte?*</label><br>
+										<select name="horario" id="norario">
+											<option disabled>Selecciona uno</option>
+											<option>En la mañana</option>
+											<option>A medio día</option>
+											<option>En la tarde</option>
+											<option>En la noche</option>
+										</select><br>
+										<input type="checkbox" name="privacy" value="terminos" class="terminos" style="width:15px;"> <span class="terminos">He leído y acepto los Términos de Privacidad*</span><br>
+										<input type="submit" class="btn btn-default" value="¡Reserva ahora!" style="width:160px; margin:40px auto 20px auto; display:block;">
+									</form>
+									<img src="library/images/arrow-form.png" class="arrow-form">
+								</div>
+							</div>
 						</div>
-					</div>
-					<div class="newsletter">
-						<div class="row">
-							<div class="col-md-12">
-								<div class="">
-									<div class="related">
-										<h3>
-											Newsletter
-										</h3>
-										<div class="row">
-											<div class="col-md-5">
-												<p>Recibe noticias acerca de LoJack en tu cuenta de correo o tu celular. Suscríbete a nuestro Newsletter:</p>
-											</div>
-											<div class="col-md-5">
-												<form>
-													<label>Escriba su e-mail:</label><br>
-											<input type="text"name="news-suscribe" class="searchbox-input" required>
-											<input type="submit" class="btn btn-default" value="Suscribir" style="margin-left:20px;"><br>
-										</form>
-											</div>
-										</div>
+					</aside>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<div class="related">
+						<h3>
+							Vehículos recuperados por Lo Jack
+						</h3>
+						<div class="recuperados">
+							<div class="row">
+								<div class="col-md-4">
+									<div class="row recover">
+										<img src="library/images/ford.png" alt="Autos recuperados" style="float:left; margin-right:10px;" width=""><p><strong>No. de reporte: 56343</strong> <br>
+									Ford Escape 2011, tiempo de recuperación 11 horas</p>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="row recover">
+										<img src="library/images/chevy.png" alt="Autos recuperados" style="float:left; margin-right:10px;" width=""><p><strong>No. de reporte: 34641</strong> <br>
+									Chevrolet Chevy 2006, tiempo de recuperación 3 horas</p>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="row recover">
+										<img src="library/images/smart.png" alt="Autos recuperados" style="float:left; margin-right:10px;" width=""><p><strong>No. de reporte: 12348</strong> <br>
+									Mercedes Smart 2012, tiempo de recuperación 45 minutos</p>
 									</div>
 								</div>
 							</div>
