@@ -660,10 +660,57 @@ ul {
 .recover p {
   padding-top: 10px;
 }
+.not-found {
+  max-height: 800px;
+  overflow: hidden;
+  text-align: center;
+}
+.not-found h1 {
+  font-size: 144px;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+.not-found h4 {
+  color: #222222;
+}
 .not-found img {
+  display: block;
   width: 100%;
-  height: auto;
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -180px;
+  z-index: -1;
+}
+.search404 {
+  position: relative;
+  height: 30px;
+  width: 100%;
+  float: right;
+  margin-top: 60px;
+  border-color: #ffffff;
+  color: #fff;
+  font-size: 20px;
+}
+.search404 label {
+  font-weight: 400;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.search404-input {
+  width: 400px;
+}
+.search404-submit {
+  background-image: url('../images/buscar.png');
+  background-color: rgba(255, 255, 255, 0);
+  border: 0 none;
+  width: 19px;
+  height: 19px;
+  font-size: 1px;
+  margin-left: 5px;
+  margin-top: 8px;
+  position: absolute;
 }
 /*
 iPHONE 5 MEDIA QUERY
