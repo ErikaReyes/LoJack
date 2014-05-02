@@ -743,6 +743,10 @@ ul {
 .como-funciona h3 {
   color: #fff;
 }
+.como-funciona .highlight {
+  margin: 50px 0;
+  font-size: 20px;
+}
 .tab-pane {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 20px;
