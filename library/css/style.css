@@ -712,6 +712,70 @@ ul {
   margin-top: 8px;
   position: absolute;
 }
+.top-productos {
+  background-image: url('../images/productos-bg.jpg');
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+.tab-productos {
+  margin-bottom: 60px;
+}
+.frase-productos img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  max-width: 100%;
+}
+.como-funciona {
+  background-color: #232323;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 10px;
+}
+.como-funciona img {
+  margin-top: 10px;
+}
+.como-funciona h2 {
+  color: #fff;
+}
+.como-funciona h3 {
+  color: #fff;
+}
+.tab-pane {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  color: #fff;
+}
+.logo-producto {
+  margin: 70px 50px;
+}
+.descripcion-producto {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 100;
+  text-align: center;
+}
+.descripcion-producto p {
+  font-size: 24px;
+}
+.descripcion-producto h3 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 300;
+  margin-top: -25px;
+}
+.imagen-producto {
+  margin-left: -40px;
+}
+.asesoria-gratis {
+  padding: 40px;
+  border-color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
 /*
 iPHONE 5 MEDIA QUERY
 Want to get fancy for no good reason? Knock yourself out.

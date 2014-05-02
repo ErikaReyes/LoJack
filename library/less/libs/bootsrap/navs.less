@@ -80,6 +80,7 @@
 // Give the tabs something to sit on
 .nav-tabs {
   border-bottom: 1px solid @nav-tabs-border-color;
+  background-color: @nav-tabs-default-color;
   > li {
     float: left;
     // Make the list-items overlay the bottom border
@@ -87,9 +88,9 @@
 
     // Actual tabs (as links)
     > a {
-      margin-right: 2px;
+      margin-right: -1px;
       line-height: @line-height-base;
-      border: 1px solid transparent;
+      border: 1px solid #fff;
       border-radius: @border-radius-base @border-radius-base 0 0;
       &:hover {
         border-color: @nav-tabs-link-hover-border-color @nav-tabs-link-hover-border-color @nav-tabs-border-color;

@@ -17,8 +17,8 @@
 								padding-bottom: 20px;
 						}
 				</style>
-				<link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,500' rel='stylesheet' type='text/css'>
-				<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+				<link href='http://fonts.googleapis.com/css?family=Roboto:100,400,400italic,700,500' rel='stylesheet' type='text/css'>
+				<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700' rel='stylesheet' type='text/css'>
 				<link rel="stylesheet" href="library/fonts/font-awesome/css/font-awesome.min.css">
 				<link rel="stylesheet" href="library/css/style.css">
 				<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
@@ -69,7 +69,13 @@
 									<nav>
 										<ul class="menu-prim">
 											<li><a href="#">Home</a></li>
-											<li><a href="#">LoJack</a></li>
+											<li class="dropdown">
+										<a href="#" id="lojack" class="dropdown-toggle" data-toggle="dropdown">LoJack<b class="caret"></b></a>
+										<ul class="dropdown-menu" role="menu">
+											<li><a href="#">Visión</a></li>
+											<li><a href="#">Misión</a></li>
+										</ul>
+									</li>
 											<li><a href="#">Beneficios</a></li>
 											<li><a href="#">Productos</a></li>
 											<li><a href="#">Instalación y venta</a></li>
@@ -94,33 +100,76 @@
 
 
 
-
+	<div class="top-productos">
 				<div class="container">
-					<div class="top-productos">
+					<div class="frase-productos">
+						<img src="library/images/recuperamos-historias.png" alt="Recuperamos autos, recuperamos historias">
+					</div>
+				
 						<div class="tab-productos col-md-12">
-							<div class="bs-example bs-example-tabs">
-								<ul id="myTab" class="nav nav-tabs">
-									<li class="active"><a href="#home" data-toggle="tab">Home</a></li>
-									<li><a href="#profile" data-toggle="tab">Profile</a></li>
-									<li class="dropdown">
-										<a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-										<ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
-											<li><a href="#dropdown1" tabindex="-1" data-toggle="tab">@fat</a></li>
-											<li><a href="#dropdown2" tabindex="-1" data-toggle="tab">@mdo</a></li>
-										</ul>
-									</li>
+							<div>
+								<ul id="productos" class="nav nav-tabs">
+									<li class="active"><a href="#lo-jack" data-toggle="tab"><img src="library/images/thumbs/seminuevos.png"></a></li>
+									<li><a href="#nuevos" data-toggle="tab"><img src="library/images/thumbs/lojack-original.png"></a></li>
+									<li><a href="#nuevos" data-toggle="tab"><img src="library/images/thumbs/sky-jack.png"></a></li>
+									<li><a href="#nuevos" data-toggle="tab"><img src="library/images/thumbs/sky-track-plus.png"></a></li>
+									<li><a href="#nuevos" data-toggle="tab"><img src="library/images/thumbs/lojack-moto.png"></a></li>
+									<li><a href="#nuevos" data-toggle="tab"><img src="library/images/thumbs/blackjack.png"></a></li>
+									<li><a href="#nuevos" data-toggle="tab"><img src="library/images/thumbs/sky-track.png"></a></li>
+									<li><a href="#nuevos" data-toggle="tab"><img src="library/images/thumbs/v-track.png"></a></li>
 								</ul>
-								<div id="myTabContent" class="tab-content">
-									<div class="tab-pane fade in active" id="home">
-										<p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+								<div id="productos-contenido" class="tab-content">
+									<div class="tab-pane fade in active" id="lo-jack">
+										<div class="row">
+										<div class="col-md-5">
+										<img src="library/images/logo-seminuevos.png" class="logo-producto"></div>
+										<div class="col-md-7">
+										<div class="descripcion-producto">Lo Jack pone a tu alcance el único sistema diseñado específicamente para la localización, recuperación y entrega de vehículos robados...
+										<p style="text-transform:uppercase;font-family: 'Roboto Slab', Georgia, 'Times New Roman', Times, serif; color:#ffffff; font-size: 26px; font-weight:300;">¡Ahora también para autos Seminuevos! </p>
+
+										</div>
+										</div>
+										</div>
+										<hr>
+										<div class="row">
+											<div class="descripcion-producto">
+												<h3>Llámanos y pregunta por el plan LoJack para Seminuevos. </h3>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-5">
+												<div class="imagen-producto"><img src="library/images/auto.png" alt=""></div>
+											</div>
+											<div class="col-md-3">
+												<p style="color:#fff; font-size:22px; text-align:center; font-weight:300;">
+													Obtén la tranquilidad que necesitas por tan sólo:
+												</p>
+												<p style="color:#e51b24; font-size:91px; text-align:center; font-weight:700; margin: -30px 0 -20px 0; padding:0;">
+													$199
+												</p>
+												<p style="color:#fff; font-size:28px; text-align:center; font-weight:300; text-transform:uppercase; font-family: 'Roboto Slab', Georgia, 'Times New Roman', Times, serif;">Pesos al mes*</p>
+											</div>
+											<div class="col-md-4">
+												<div class="asesoria-gratis">
+													<p style="color:#fff; font-size:22px; text-align:center; font-weight:300; letter-spacing:3px">Obtén una <span style="font-weight:400; letter-spacing:3px">asesoría</span></p>
+													<p style="color:#fff; font-size:68px; text-align:center; font-weight:100; margin: -30px 0 0px 0; padding:0; font-family: 'Roboto Slab', Georgia, 'Times New Roman', Times, serif;">¡GRATIS!</p>
+													<div class="btn btn-primary btn-lg" style="text-align:center; display:block; margin-left:auto; margin-right:auto;">¡Llámame ahora!</div>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<small>
+												*Primer pago de $799 incluye instalación. Mensualidades de $199 pesos y a partir del mes 13 la mensualidad se ajusta a $99 pesos.<br>
+												*Aplica para modelos 2012 y anteriores de uso particular únicamente.</small>
+										</div>
 									</div>
-									<div class="tab-pane fade" id="profile">
+									<div class="tab-pane fade" id="nuevos">
 										<p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
 									</div>
-									<div class="tab-pane fade" id="dropdown1">
+									<div class="tab-pane fade" id="seminuevos">
 										<p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
 									</div>
-									<div class="tab-pane fade" id="dropdown2">
+									<div class="tab-pane fade" id="black-jack">
 										<p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p>
 									</div>
 								</div>
@@ -129,8 +178,75 @@
 					</div>
 				</div>
 
+			<div class="como-funciona">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							<h2 class="subtitle">¿Cómo funciona Lo Jack?</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							
+							<div class="row">
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-10">
+									<article class="highlight">
+										<div class="row">
+									<img src="library/images/carrito.png"></div>
+									<div class="row">
+									<h3> </h3>
+									<p>Reporta a las autoridades</p></div>
+									</article>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-10">
+									<article class="highlight">
+									<div class="row">
+									<img src="library/images/candado.png"></div>
+									<h3> </h3>
+									<p>Reporta tu robo a LoJack</p>
+									</article>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-10 ">
+									<article class="highlight">
+									<div class="row">
+									<img src="library/images/escudo.png"></div>
+									<h3> </h3>
+									<p>Activamos la señal en tu dispositivo</p>
+									</article>
+								</div>
+							</div>
 
+						</div>
+					</div>
 
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 hidden-xs">
+							
+							<div class="row">
+								<div class="col-lg-4 col-lg-offset-2 col-md-4 col-md-offset-2 col-sm-4 col-sm-offset-2">
+									<article class="highlight">
+									<div class="row">
+									<img src="library/images/policia.png"></div>
+									<h3> </h3>
+									<p>Señal captada por infraestructura fija y móvil de rastreo</p>
+									
+									</article>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-4">
+									<article class="highlight">
+									<div class="row">
+									<img src="library/images/familia.png"></div>
+									<h3> </h3>
+									<img src="library/images/slogan.png">
+									<p>tu vehículo</p>
+									
+									</article>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
 			<footer>
 				<div class="footer-principal">
